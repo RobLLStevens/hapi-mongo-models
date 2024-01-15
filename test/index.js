@@ -14,7 +14,7 @@ const config = {
             uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/',
             db: 'hapi-mongo-models-test'
         },
-        options: {}
+        options: { useUnifiedTopology: true }
     },
     models: [
         Path.resolve(__dirname, 'fixtures/dummy-model'),
